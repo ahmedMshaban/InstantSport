@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head section all external style-sheets scripts title of the page and meta tags  -->
+    <!-- meta charset defines the character set for the page -->
+    <meta charset="UTF-8" />
+    <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" defines compatibility the page with internet explorer IE-edge means IE Edge Version -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta viewport defines responsiveness of the page on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title OF  The Page-->
+    <title>InstantSport - All sports in one place.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <!-- Body Section Start Which Contains All the content we can see on the browser -->
+  <body class="story">
+    <header>
+      <!--'is' standard for InstantSport -->
+      <!--Main Menu desktop-->
+      <div class="is-main-header-wrap is-desktop-menu">
+        <!--Content container-->
+        <div class="is-container">
+          <div class="is-grid-row">
+            <!--./ in href means the directory where file is placed 
+                     / means the parent directory e.g. 
+                     if our project placed in C:/mywork/html/project/
+                     ./ will be directed to C:/mywork/html/project/
+                     / will be directed to C:/
+                     -->
+            <a href="./" class="is-logo-link">
+              <!-- img tag is used add images in the web page alt tag is the text about the image which can be very helpful for search engines -->
+              <img
+                src="/assets/images/logo.svg"
+                alt="Instant Sport Logo"
+                class="is-logo"
+              />
+            </a>
+            <!-- nav tag is used to add navigations -->
+            <nav class="is-main-nav">
+              <ul>
+                <li>
+                  <a href="./">News</a>
+                </li>
+                <li>
+                  <a href="./stories.html">Stories</a>
+                </li>
+                <li>
+                  <a href="./contactus.html">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="is-account-nav">
+              <nav>
+                <ul>
+                  <li class="toggle-icon-container">
+                    <a
+                      href="javascript:void(0);"
+                      class="menu-toggle-icon"
+                      onclick="mobileMenuHanlder()"
+                    >
+                      <img
+                        src="assets/images/menu-toggle.svg"
+                        alt="menu toggle icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="search-icon-container">
+                    <a
+                      href="#"
+                      class="search-toggle-icon"
+                      onclick="searchMobileHanlder()"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        role="img"
+                      >
+                        <g>
+                          <path
+                            d="M22.71 14.74a7.847 7.847 0 1 1-15.695-.001 7.847 7.847 0 0 1 15.695 0zm-1.8 0a6.047 6.047 0 1 0-12.095.001 6.047 6.047 0 0 0 12.095-.002z"
+                          ></path>
+                          <path
+                            d="M24.721 23.572l-4.435-4.435a.9.9 0 1 0-1.272 1.272l4.435 4.435a.9.9 0 1 0 1.272-1.272z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <input
+                type="search"
+                placeholder="Search for teams, players or articles"
+              />
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu mobile-->
+      <div class="is-mobile-menu">
+        <!-- nav tag is used to add navigations -->
+        <nav class="is-mmain-nav">
+          <!-- ul is un-ordered list all the items will start with bullets (default / custom) -->
+          <ul class="">
+            <li>
+              <a href="./">News</a>
+            </li>
+            <li>
+              <a href="./stories.html">Stories</a>
+            </li>
+            <li>
+              <a href="./contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main-area">
+      <!--Content container-->
+      <div class="is-container">
+        <aside class="left">
+          <img
+            src="./assets/images/pexels-tima-miroshnichenko-5088037(1).jpg"
+            alt="Mounted Archery"
+          />
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.pexels.com/photo/a-man-shooting-an-arrow-while-riding-a-horse-5088037/"
+                   class="prev-stroy"><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="32"
+                    viewBox="0 0 28 32"
+                    role="img"
+                  >
+                    <path
+                      d="M18.368 22.458c.349-.3.39-.825.09-1.174L13.928 16l4.53-5.284a.833.833 0 0 0-1.263-1.084L12.2 15.459a.832.832 0 0 0 0 1.083l4.995 5.826a.832.832 0 0 0 1.173.09z"
+                    ></path>
+                  </svg>
+                  <span class="title">Previous Story</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                   class="next-story"><span class="title">Next Story</span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="32"
+                    viewBox="0 0 28 32"
+                    role="img"
+                  >
+                    <path
+                      d="M18.368 22.458c.349-.3.39-.825.09-1.174L13.928 16l4.53-5.284a.833.833 0 0 0-1.263-1.084L12.2 15.459a.832.832 0 0 0 0 1.083l4.995 5.826a.832.832 0 0 0 1.173.09z"
+                    ></path></svg></a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <main>
+          <article>
+            <h1>
+              Traditional sports: Train to be a mounted archer
+            </h1>
+            <time datetime="2022-02-23T05:48:51.000Z">2 h ago</time>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                dui orci, egestas non ex ac, placerat finibus massa. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia curae; Nullam cursus, sapien elementum dictum malesuada,
+                velit lectus efficitur velit, ut placerat neque diam vitae
+                neque. Sed rhoncus, ipsum a tincidunt placerat, lorem lorem
+                varius tellus, a molestie lacus massa nec lacus. Pellentesque
+                mollis dictum enim, quis tincidunt augue placerat sit amet.
+                Phasellus tempus purus mi, at sagittis orci luctus id. Morbi
+                efficitur, erat at sagittis tempus, quam magna consequat nisi,
+                mollis sollicitudin sapien erat a nisi. In elementum lorem erat,
+                ut molestie ipsum vulputate ut. Sed ante urna, pretium et mauris
+                consequat, dapibus mattis nisl. Phasellus sit amet orci egestas,
+                convallis diam rutrum, tincidunt metus. Duis sollicitudin
+                scelerisque laoreet. Morbi vel libero placerat, iaculis leo et,
+                tempus tortor. Praesent ullamcorper, tortor eu varius tincidunt,
+                ipsum libero tincidunt nisl, sed suscipit eros mi nec elit.
+              </p>
+              <p>
+                Ut faucibus nisl ac volutpat interdum. Phasellus eu massa a leo
+                convallis ullamcorper. Vestibulum suscipit a risus et lacinia.
+                Praesent eu ante quis justo venenatis interdum vitae eu mauris.
+                Praesent id leo suscipit, facilisis lacus sed, tempus magna.
+                Duis gravida pretium consectetur. Donec iaculis consequat nisl
+                vel cursus. Nullam convallis porta nunc, nec volutpat arcu
+                mattis a. Integer gravida semper eros, id placerat ex pretium
+                sit amet. Nunc consectetur purus et hendrerit suscipit. Duis
+                ornare magna ac pulvinar semper. Suspendisse pulvinar arcu
+                purus, at sollicitudin risus pharetra et. Ut nulla elit,
+                tincidunt at tellus facilisis, accumsan hendrerit risus. Cras
+                malesuada volutpat tellus eu semper.
+              </p>
+              <p>
+                Aenean a risus quis sem luctus molestie ut sit amet ante. Proin
+                ullamcorper tempus tellus id hendrerit. Curabitur elementum nibh
+                at volutpat porttitor. Praesent suscipit convallis diam, sit
+                amet aliquet ex maximus blandit. Donec ac mauris ut libero
+                sollicitudin suscipit. Cras sit amet auctor nunc. Nunc mattis
+                rutrum sem quis ullamcorper. Sed non aliquam lacus. Quisque
+                vitae porttitor magna. Mauris faucibus quis quam porttitor
+                aliquet. Mauris ipsum mi, pretium nec sapien quis, vestibulum
+                tincidunt odio. Pellentesque habitant morbi tristique senectus
+                et netus et malesuada fames ac turpis egestas.
+              </p>
+              <p>
+                Nunc leo nunc, rhoncus et laoreet vitae, ullamcorper sit amet
+                justo. Vivamus in est quis lectus blandit luctus sit amet a leo.
+                Aenean sed ornare lacus. Nunc feugiat, elit a vehicula
+                porttitor, ante turpis congue tortor, ac tristique dolor magna
+                eget lacus. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Quisque mattis commodo
+                suscipit. Ut sapien erat, laoreet sed faucibus sit amet, rhoncus
+                et justo. Fusce convallis dolor eget ultrices posuere. Phasellus
+                a libero et enim iaculis mollis. Proin at accumsan neque, nec
+                cursus elit. Sed viverra consequat tempus. In dolor elit,
+                convallis eget lobortis sit amet, maximus ac velit. Donec eget
+                auctor metus, eget volutpat nisl. Pellentesque arcu elit,
+                commodo in consequat et, venenatis eget ligula.
+              </p>
+            </div>
+            <footer>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        role="img"
+                      >
+                        <path
+                          d="M8.092 17.484c-.775 1.926-.98 3.917-.875 5.609.008.135.017.234.024.292.098.873 1.26 1.103 1.683.333.985-1.795 2.028-3.077 3.138-3.939 1.518-1.178 2.78-1.505 5.198-1.55v3.39c0 .803.97 1.204 1.536.637l6.927-6.927a.9.9 0 0 0 0-1.273L18.796 7.13c-.567-.567-1.536-.165-1.536.637v3.712c-4.769.246-7.746 2.472-9.168 6.006zm10.968 1.963v-2.124a.9.9 0 0 0-.9-.9h-.19c-3.263-.003-4.95.334-7.012 1.934a11.33 11.33 0 0 0-1.757 1.721c.123-.64.306-1.289.561-1.922 1.24-3.08 3.847-4.901 8.398-4.901a.9.9 0 0 0 .9-.9V9.939l4.754 4.754-4.754 4.754z"
+                        ></path>
+                      </svg>
+                      <span class="title">Share Story</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        role="img"
+                      >
+                        <g fill="none">
+                          <path
+                            d="M32 16c0 8.837-7.164 16-16 16-8.837 0-16-7.163-16-16S7.163 0 16 0c8.836 0 16 7.163 16 16"
+                          ></path>
+                          <path
+                            fill="currentColor"
+                            d="M8.75 7a.75.75 0 01.75.75v16.5a.75.75 0 01-1.5 0V7.75A.75.75 0 018.75 7zm14.595 1.5a1 1 0 01.895 1.447l-1.678 3.356c-.14.281-.14.613 0 .894l1.678 3.356A1 1 0 0123.345 19H12a1 1 0 01-1-1V9.5a1 1 0 011-1h11.345zM20.918 10H13.5a1 1 0 00-1 1v5.5a1 1 0 001 1h7.418a.999.999 0 00.894-1.447l-.927-1.856a1.004 1.004 0 010-.894l.927-1.856A1 1 0 0020.918 10z"
+                          ></path>
+                        </g>
+                      </svg>
+                      <span class="title">Report Story</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </footer>
+          </article>
+        </main>
+        <aside class="right">
+          <div class="download-app-cotainer">
+            <a href="#" class="mobile-app-link play-store">
+              <img
+                src="./assets/images/play-store.svg"
+                alt="InstantSport play store app"
+              />
+            </a>
+            <a href="#" class="mobile-app-link google-play">
+              <img
+                src="./assets/images/app-store.svg"
+                alt="InstantSport app store app"
+              />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Mobile app</a>
+              </li>
+              <li>
+                <a href="/contactus.html">Contact us</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="./report.html">Report</a>
+              </li>
+            </ul>
+          </nav>
+          <footer>
+            <small>&copy; Copyright 2022, InstantSport</small>
+          </footer>
+        </aside>
+      </div>
+    </div>
+    <script src="assets/scripts/index.js"></script>
+  </body>
+  <!-- end of body -->
+</html>
+<!-- End Of The Page -->

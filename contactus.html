@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head section all external style-sheets scripts title of the page and meta tags  -->
+    <!-- meta charset defines the character set for the page -->
+    <meta charset="UTF-8" />
+    <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" defines compatibility the page with internet explorer IE-edge means IE Edge Version -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta viewport defines responsiveness of the page on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title OF  The Page-->
+    <title>InstantSport - All sports in one place.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <!-- Body Section Start Which Contains All the content we can see on the browser -->
+  <body class="contactus">
+    <header>
+      <!--'is' standard for InstantSport -->
+      <!--Main Menu desktop-->
+      <div class="is-main-header-wrap is-desktop-menu">
+        <!--Content container-->
+        <div class="is-container">
+          <div class="is-grid-row">
+            <!--./ in href means the directory where file is placed 
+                     / means the parent directory e.g. 
+                     if our project placed in C:/mywork/html/project/
+                     ./ will be directed to C:/mywork/html/project/
+                     / will be directed to C:/
+                     -->
+            <a href="./" class="is-logo-link">
+              <!-- img tag is used add images in the web page alt tag is the text about the image which can be very helpful for search engines -->
+              <img
+                src="/assets/images/logo.svg"
+                alt="Instant Sport Logo"
+                class="is-logo"
+              />
+            </a>
+            <!-- nav tag is used to add navigations -->
+            <nav class="is-main-nav">
+              <ul>
+                <li>
+                  <a href="./">News</a>
+                </li>
+                <li>
+                  <a href="./stories.html">Stories</a>
+                </li>
+                <li>
+                  <a href="./contactus.html">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="is-account-nav">
+              <nav>
+                <ul>
+                  <li class="toggle-icon-container">
+                    <a
+                      href="javascript:void(0);"
+                      class="menu-toggle-icon"
+                      onclick="mobileMenuHanlder()"
+                    >
+                      <img
+                        src="assets/images/menu-toggle.svg"
+                        alt="menu toggle icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="search-icon-container">
+                    <a
+                      href="#"
+                      class="search-toggle-icon"
+                      onclick="searchMobileHanlder()"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        role="img"
+                      >
+                        <g>
+                          <path
+                            d="M22.71 14.74a7.847 7.847 0 1 1-15.695-.001 7.847 7.847 0 0 1 15.695 0zm-1.8 0a6.047 6.047 0 1 0-12.095.001 6.047 6.047 0 0 0 12.095-.002z"
+                          ></path>
+                          <path
+                            d="M24.721 23.572l-4.435-4.435a.9.9 0 1 0-1.272 1.272l4.435 4.435a.9.9 0 1 0 1.272-1.272z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <input
+                type="search"
+                placeholder="Search for teams, players or articles"
+              />
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu mobile-->
+      <div class="is-mobile-menu">
+        <!-- nav tag is used to add navigations -->
+        <nav class="is-mmain-nav">
+          <!-- ul is un-ordered list all the items will start with bullets (default / custom) -->
+          <ul class="">
+            <li>
+              <a href="./">News</a>
+            </li>
+            <li>
+              <a href="./stories.html">Stories</a>
+            </li>
+            <li>
+              <a href="./contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main-area">
+      <!--Content container-->
+      <div class="is-container">
+        <main>
+          <h1>Contact us</h1>
+          <div class="form-container">
+            <form action="#">
+              <label for="subject" class="screen-reader-text">Subject:</label>
+              <select name="subject" id="subject">
+                <option value="question">General Question</option>
+                <option value="suggestions">Suggestions For Improvement</option>
+                <option value="error">Erros/problems</option>
+              </select>
+              <label for="name" class="screen-reader-text">Name: </label>
+              <input type="text" id="name" name="name" placeholder="Name" />
+              <label for="email" class="screen-reader-text">Email: </label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <label for="email" class="screen-reader-text">Message text: </label>
+              <textarea name="text" placeholder="Message text"></textarea>
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+        </main>
+        <aside class="right">
+          <div class="download-app-cotainer">
+            <a href="#" class="mobile-app-link play-store">
+              <img
+                src="./assets/images/play-store.svg"
+                alt="InstantSport play store app"
+              />
+            </a>
+            <a href="#" class="mobile-app-link google-play">
+              <img
+                src="./assets/images/app-store.svg"
+                alt="InstantSport app store app"
+              />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Mobile app</a>
+              </li>
+              <li>
+                <a href="/contactus.html">Contact us</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="./report.html">Report</a>
+              </li>
+            </ul>
+          </nav>
+          <footer>
+            <small>&copy; Copyright 2022, InstantSport</small>
+          </footer>
+        </aside>
+      </div>
+    </div>
+    <script src="assets/scripts/index.js"></script>
+  </body>
+  <!-- end of body -->
+</html>
+<!-- End Of The Page -->

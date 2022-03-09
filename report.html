@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head section all external style-sheets scripts title of the page and meta tags  -->
+    <!-- meta charset defines the character set for the page -->
+    <meta charset="UTF-8" />
+    <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" defines compatibility the page with internet explorer IE-edge means IE Edge Version -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta viewport defines responsiveness of the page on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title OF  The Page-->
+    <title>InstantSport - All sports in one place.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <!-- Body Section Start Which Contains All the content we can see on the browser -->
+  <body class="report">
+    <header>
+      <!--'is' standard for InstantSport -->
+      <!--Main Menu desktop-->
+      <div class="is-main-header-wrap is-desktop-menu">
+        <!--Content container-->
+        <div class="is-container">
+          <div class="is-grid-row">
+            <!--./ in href means the directory where file is placed 
+                     / means the parent directory e.g. 
+                     if our project placed in C:/mywork/html/project/
+                     ./ will be directed to C:/mywork/html/project/
+                     / will be directed to C:/
+                     -->
+            <a href="./" class="is-logo-link">
+              <!-- img tag is used add images in the web page alt tag is the text about the image which can be very helpful for search engines -->
+              <img
+                src="/assets/images/logo.svg"
+                alt="Instant Sport Logo"
+                class="is-logo"
+              />
+            </a>
+            <!-- nav tag is used to add navigations -->
+            <nav class="is-main-nav">
+              <ul>
+                <li>
+                  <a href="./">News</a>
+                </li>
+                <li>
+                  <a href="./stories.html">Stories</a>
+                </li>
+                <li>
+                  <a href="./contactus.html">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="is-account-nav">
+              <nav>
+                <ul>
+                  <li class="toggle-icon-container">
+                    <a
+                      href="javascript:void(0);"
+                      class="menu-toggle-icon"
+                      onclick="mobileMenuHanlder()"
+                    >
+                      <img
+                        src="assets/images/menu-toggle.svg"
+                        alt="menu toggle icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="search-icon-container">
+                    <a
+                      href="#"
+                      class="search-toggle-icon"
+                      onclick="searchMobileHanlder()"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        role="img"
+                      >
+                        <g>
+                          <path
+                            d="M22.71 14.74a7.847 7.847 0 1 1-15.695-.001 7.847 7.847 0 0 1 15.695 0zm-1.8 0a6.047 6.047 0 1 0-12.095.001 6.047 6.047 0 0 0 12.095-.002z"
+                          ></path>
+                          <path
+                            d="M24.721 23.572l-4.435-4.435a.9.9 0 1 0-1.272 1.272l4.435 4.435a.9.9 0 1 0 1.272-1.272z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <input
+                type="search"
+                placeholder="Search for teams, players or articles"
+              />
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Menu mobile-->
+      <div class="is-mobile-menu">
+        <!-- nav tag is used to add navigations -->
+        <nav class="is-mmain-nav">
+          <!-- ul is un-ordered list all the items will start with bullets (default / custom) -->
+          <ul class="">
+            <li>
+              <a href="./">News</a>
+            </li>
+            <li>
+              <a href="./stories.html">Stories</a>
+            </li>
+            <li>
+              <a href="./contactus.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main-area">
+      <!--Content container-->
+      <div class="is-container">
+        <main>
+          <h1>Report</h1>
+          <h2>Name:</h2>
+          <p>Ahmed Mohamed Shaban Ahmed</p>
+          <h2>Introduction:</h2>
+          <p>
+            InstantSport is the place for on-demand sports news, and we wanted
+            to make sports news easy and fun even for casual sports lovers. All
+            sports in one place.
+          </p>
+          <h2>
+            State 3 things that have inspired you when creating your website:
+          </h2>
+          <ul>
+            <li>
+              Stories from the
+              <a href="https://www.foxsports.com/stories" target="_blank"
+                >fox sports
+              </a>
+              website.
+            </li>
+            <li>
+              Sticky sidebar of the
+              <a
+                href="https://shop.playmakers.com"
+                target="_blank"
+                >playmakers</a
+              >
+              website.
+            </li>
+            <li>
+              Good color choice of
+              <a href="https://www.marca.com/" target="_blank">MARCA</a>
+              website.
+            </li>
+          </ul>
+          <h2>State 3 ways in which your site is accessible:</h2>
+          <ul>
+            <li>Image elements have [alt] attributes</li>
+            <li>All pages has a (title) element</li>
+            <li>
+              List items (li) are contained within (ul) or (ol) parent elements
+            </li>
+          </ul>
+          <h2>
+            State 3 ways in which you have considered usability in your site:
+          </h2>
+          <ul>
+            <li>
+              Sticky sidebar which helps users have a more pleasant, seamless
+              experience.
+            </li>
+            <li>
+              The main menu doesn’t have too high a number of submenus which
+              would help quickly give users what they want.
+            </li>
+            <li>
+              The design and layout are simple, the space between sections is
+              constant, and using propr images to attract users.
+            </li>
+          </ul>
+          <h2>
+            State 3 things you had to learn/find out by yourself when creating
+            your site, and describe how you did that:
+          </h2>
+          <ul>
+            <li>
+              I learned how to use CSS grid,
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                >CSS tricks</a
+              >
+              have a comprehensive article.
+            </li>
+            <li>
+              I learned how to make my more accessible by using the
+              <a
+                href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=tr"
+                target="_blank"
+                >Google Lighthouse</a
+              >
+              tool.
+            </li>
+            <li>
+              I learned how to use graphic tools such as
+              <a href="https://www.canva.com/" target="_blank">Canava</a> to
+              create the site logo and edit images.
+            </li>
+          </ul>
+          <h2>What aspect(s) of your work do you think worked well and why?</h2>
+          <ul>
+            <li>
+              I tried as possible to follow the best practices I learned
+              throughout the course to build a clean and zero error website as
+              possible and I have used
+              <a
+                href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=tr"
+                target="_blank"
+                >Google Lighthouse</a
+              >
+              best practice tool to help me with that.
+            </li>
+            <li>
+              I have used w3c to scan and validate the website HTML, CSS and
+              make sure it’s error-free.
+            </li>
+            <li>
+              The design, style, and responsiveness I think those work very well
+              and the site is adept very well on all devices.
+            </li>
+          </ul>
+          <h2>
+            What aspect(s) of your work could be improved, and how might you do
+            things differently another time?
+          </h2>
+          <ul>
+            <li>
+              I would make the home page slider move automatically every 5
+              seconds, now you have to manually scroll left and right.
+            </li>
+            <li>
+              I would implement an infinite scroll on the “All news” sections.
+            </li>
+            <li>
+              Add back to the top button after implementing the infinite scroll
+              to make the site more accessible.
+            </li>
+          </ul>
+          <h2>What resources were used when creating your work?</h2>
+          <ul>
+            <li>
+              <a href="https://www.canva.com/" target="_blank">Canva</a> to
+              design logo and edit the images.
+            </li>
+            <li>
+              <a href="https://fonts.google.com/" target="_blank"
+                >Google fonts</a
+              >
+              to load the fonts.
+            </li>
+            <li>
+              <a href="https://validator.w3.org/" target="_blank"
+                >W3C markup validator</a
+              >,
+              <a href="https://jigsaw.w3.org/css-validator/" target="_blank"
+                >W3C CSS validator</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developers.google.com/web/tools/lighthouse"
+                target="_blank"
+                >Google Lighthouse</a
+              >
+              to scan and improve the performance.
+            </li>
+            <li>
+              <a href="https://www.pexels.com" target="_blank">Pexels</a> to get
+              stock photos and I referred the authors as needed.
+            </li>
+            <li>
+              <a href="https://www.favicon-generator.org/" target="_blank"
+                >Favicon & App Icon Generator</a
+              >
+            </li>
+            <li>
+              <a href="https://www.svgrepo.com/" target="_blank">SVG PRO</a> to
+              get the SVG icons.
+            </li>
+            <li>
+              <a href="https://www.figma.com" target="_blank">Figma</a> to
+              design the mock and wireframe.
+            </li>
+            <li>
+              <a
+                href="https://meyerweb.com/eric/tools/css/reset/"
+                target="_blank"
+                >CSS reset</a
+              >
+              to reduce browser inconsistencies.
+            </li>
+            <li>
+              <a href="https://www.taleek.com/" target="_blank">Taleek</a> used
+              to download mobile app images
+            </li>
+          </ul>
+          <h2>Appendices:</h2>
+          <h3>Site map:</h3>
+          <ul>
+            <li>Home</li>
+            <li>News Single</li>
+            <li>Stories</li>
+            <li>Story Single</li>
+            <li>Contact us</li>
+          </ul>
+          <h3>Wireframe:</h3>
+          <a
+            href="https://www.figma.com/file/bf01eFNWkZRF9mvg5T7y1J/WD---Final-project---Wireframe?node-id=0%3A1"
+            target="_blank"
+            >Link</a
+          >
+          <h3>Mockup:</h3>
+          <a
+            href="https://www.figma.com/file/NsbiAx080WHNbqwwRWRgiA/WD---Final-Project---Mockup?node-id=422669%3A448"
+            target="_blank"
+            >Link</a
+          >
+        </main>
+        <aside class="right">
+          <div class="download-app-cotainer">
+            <a href="#" class="mobile-app-link play-store">
+              <img
+                src="./assets/images/play-store.svg"
+                alt="InstantSport play store app"
+              />
+            </a>
+            <a href="#" class="mobile-app-link google-play">
+              <img
+                src="./assets/images/app-store.svg"
+                alt="InstantSport app store app"
+              />
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Mobile app</a>
+              </li>
+              <li>
+                <a href="/contactus.html">Contact us</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="./report.html">Report</a>
+              </li>
+            </ul>
+          </nav>
+          <footer>
+            <small>&copy; Copyright 2022, InstantSport</small>
+          </footer>
+        </aside>
+      </div>
+    </div>
+    <script src="assets/scripts/index.js"></script>
+  </body>
+  <!-- end of body -->
+</html>
+<!-- End Of The Page -->
